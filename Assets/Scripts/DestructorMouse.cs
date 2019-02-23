@@ -3,7 +3,6 @@ using System.Collections;
 
 public class DestructorMouse : MonoBehaviour
 {
-
     void OnMouseOver() // Triggers the following code when the mouse hovers over the object with this script attached to it
     {
         if (Input.GetMouseButton(0)) // Action started if the button pressed while hovering is the mouse left button
