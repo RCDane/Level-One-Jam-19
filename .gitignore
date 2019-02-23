@@ -25,3 +25,7 @@ Assets/StreamingAssets/*.bank
 fmod.log
 fmod_editor.log
 
+.vs/Level-One-Jam-19/v15/Server/sqlite3/storage.ide-shm
+.vs/Level-One-Jam-19/v15/Server/sqlite3/db.lock
+.vs/Level-One-Jam-19/v15/Server/sqlite3/storage.ide-wal
+.vs/Level-One-Jam-19/v15/Server/sqlite3/storage.ide
