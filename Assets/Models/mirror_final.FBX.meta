@@ -1,17 +1,14 @@
 fileFormatVersion: 2
-guid: 14de99fc1b0ee764e8e55270023c1ea0
+guid: 6a74ac45391b04d48affc53a1f90afa1
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: 'Material #27'
-    2100002: 'Material #25'
-    2100004: 'Material #22'
-    2100006: 'Material #24'
+    2100000: 'Material #17'
     2300000: //RootNode
     3300000: //RootNode
-    4300000: room
+    4300000: mirror_final
   externalObjects: {}
   materials:
     importMaterials: 1
