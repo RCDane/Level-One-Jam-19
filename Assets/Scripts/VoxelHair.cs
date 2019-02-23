@@ -177,6 +177,8 @@ public class VoxelHair : MonoBehaviour
         {
             GameObject obj = GetActiveVoxel(voxels[x, y, z].voxelIndex);
             DeactivateVoxel(obj);
+            voxels[x, y, z].hasHair = false;
+
             voxels[x, y, z].isActive = false;
         }
     }
@@ -287,8 +289,8 @@ public class VoxelHair : MonoBehaviour
             //RemoveVoxel();
             //ActivateVoxel(VoxelsToGoThrough[i].pos);
             //voxels[VoxelsToGoThrough[i].pos.x, VoxelsToGoThrough[i].pos.y, VoxelsToGoThrough[i].pos.z].isActive = true;
-
-            voxels[VoxelsToGoThrough[i].pos.x, VoxelsToGoThrough[i].pos.y, VoxelsToGoThrough[i].pos.z].hasHair = true;
+            ActivateVoxel(VoxelsToGoThrough[i].pos);
+            //voxels[VoxelsToGoThrough[i].pos.x, VoxelsToGoThrough[i].pos.y, VoxelsToGoThrough[i].pos.z].hasHair = true;
             //DeactivateVoxel()
             //}
             //}
