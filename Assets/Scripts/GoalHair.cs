@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GoalHair : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class GoalHair : MonoBehaviour
     // when no more objects are colliding with the body (Still working on a solution for this, but by now this will do)
 
     int score = 100; // An integer data type for having the score value
+    public Text EndText;
+    public GameObject EndMessage;
+    private int extraScore;
     private void OnTriggerEnter(Collider other) //Collision detection with tagged GameObjects as "PlayerHair"
         {
             if (other.tag == "PlayerHair")
@@ -23,27 +27,32 @@ public class GoalHair : MonoBehaviour
 
     private void Start()
     {
-            Invoke("FinalScore",2); // Calls the FinalScore() function two seconds after the script runtime
+        EndMessage.gameObject.SetActive(true);
+        score = score + extraScore;
+        Invoke("FinalScore",2); // Calls the FinalScore() function two seconds after the script runtime
         }
-    public int FinalScore()
+    public void FinalScore()
     {
         if (100 >= score && score >= 60)
         {
             Debug.Log("Score =" + score); //Creates a log of the score
-            return 0; // Return 0, the maximum score possible for the player if the score is between 100 and 60
+            EndText.text = "(Not that)Badbershop!";
         }
         else if (60 > score && score >= 30)
         { 
             Debug.Log("Score =" + score);
-            return 1; // Return 1, the middle score (Or two stars) if the score is between 59 and 30
+            EndText.text = "At least you are trying" ;
         }
 
         else
         {
             Debug.Log("Score =" + score);
-            return 2; // Return 2, the lowest score (One star) if the score is lower than 30
+            EndText.text = "You suck :)";
         }
-        
     }
+    public void IncreaseScore(int increase)
+    {
+        extraScore = extraScore + increase;
     }
+}
 
