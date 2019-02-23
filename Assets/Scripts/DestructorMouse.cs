@@ -18,11 +18,11 @@ public class DestructorMouse : MonoBehaviour
     }
     void MultiplyHair() // Creates 6 clones of this game objects separated one unit each from one of the faces
     {
-        Instantiate(this.gameObject, this.transform.position + new Vector3(1, 0, 0), Quaternion.identity);
-        Instantiate(this.gameObject, this.transform.position + new Vector3(0, 1, 0), Quaternion.identity);
-        Instantiate(this.gameObject, this.transform.position + new Vector3(0, 0, 1), Quaternion.identity);
-        Instantiate(this.gameObject, this.transform.position + new Vector3(-1, 0, 0), Quaternion.identity);
-        Instantiate(this.gameObject, this.transform.position + new Vector3(0, -1, 0), Quaternion.identity);
-        Instantiate(this.gameObject, this.transform.position + new Vector3(0, 0, -1), Quaternion.identity);
+        Instantiate(this.gameObject, this.transform.position + new Vector3(1, 0, 0), Quaternion.identity,this.gameObject.transform.parent);
+        Instantiate(this.gameObject, this.transform.position + new Vector3(0, 1, 0), Quaternion.identity, this.gameObject.transform.parent);
+        Instantiate(this.gameObject, this.transform.position + new Vector3(0, 0, 1), Quaternion.identity, this.gameObject.transform.parent);
+        Instantiate(this.gameObject, this.transform.position + new Vector3(-1, 0, 0), Quaternion.identity, this.gameObject.transform.parent);
+        Instantiate(this.gameObject, this.transform.position + new Vector3(0, -1, 0), Quaternion.identity, this.gameObject.transform.parent);
+        Instantiate(this.gameObject, this.transform.position + new Vector3(0, 0, -1), Quaternion.identity, this.gameObject.transform.parent);
     }
 }
