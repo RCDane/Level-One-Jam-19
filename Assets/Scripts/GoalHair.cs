@@ -13,6 +13,7 @@ public class GoalHair : MonoBehaviour
     int score = 100; // An integer data type for having the score value
     public Text EndText;
     public GameObject EndMessage;
+    private int extraScore;
     private void OnTriggerEnter(Collider other) //Collision detection with tagged GameObjects as "PlayerHair"
         {
             if (other.tag == "PlayerHair")
@@ -27,6 +28,7 @@ public class GoalHair : MonoBehaviour
     private void Start()
     {
         EndMessage.gameObject.SetActive(true);
+        score = score + extraScore;
         Invoke("FinalScore",2); // Calls the FinalScore() function two seconds after the script runtime
         }
     public void FinalScore()
@@ -47,7 +49,10 @@ public class GoalHair : MonoBehaviour
             Debug.Log("Score =" + score);
             EndText.text = "You suck :)";
         }
-        
     }
+    public void IncreaseScore(int increase)
+    {
+        extraScore = extraScore + increase;
     }
+}
 
