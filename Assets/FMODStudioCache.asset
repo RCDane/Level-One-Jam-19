@@ -30,11 +30,14 @@ MonoBehaviour:
   - {fileID: 114817268171030722}
   - {fileID: 114694218387515898}
   - {fileID: 114383458118577750}
+  - {fileID: 114116221642806312}
+  - {fileID: 114447790820669168}
+  - {fileID: 114140860093553556}
   MasterBanks:
   - {fileID: 114499702501804332}
   StringsBanks:
   - {fileID: 114252027944365648}
-  stringsBankWriteTime: 636865728100000000
+  stringsBankWriteTime: 636865762440000000
   cacheVersion: 3
 --- !u!114 &114010991955255614
 MonoBehaviour:
@@ -283,6 +286,22 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114065383663114758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: TrimmerCuttingHair
+  Min: 0
+  Max: 2
+  Default: 0
 --- !u!114 &114071419854296420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -489,6 +508,29 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114116221642806312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Dialogue/HitManCharacter/HitmanWrongAnswer
+  guid: 133789c41397594881b73d148d86ca7d
+  Banks:
+  - {fileID: 114499702501804332}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2078
 --- !u!114 &114124199867593824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -560,6 +602,29 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
+--- !u!114 &114140860093553556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Dialogue/HitManCharacter/HitmanCorrectAnswer
+  guid: 5039160b55bea1449d1afa3dca74d9f5
+  Banks:
+  - {fileID: 114499702501804332}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1835
 --- !u!114 &114141935222314078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -715,8 +780,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 114992675379668508}
-  - {fileID: 114260570861925276}
+  - {fileID: 114887069096421206}
+  - {fileID: 114919148399901078}
   MinDistance: 1
   MaxDistance: 70
   Length: 31536
@@ -948,7 +1013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets/Audio/FMOD built banks/Desktop/Master Bank.strings.bank
-  lastModified: 636865728100000000
+  lastModified: 636865762440000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -1127,7 +1192,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 114590034058816840}
+  - {fileID: 114429399787685762}
   MinDistance: 1
   MaxDistance: 20
   Length: 4000
@@ -1506,6 +1571,22 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114421527981093162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: GameProgress
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114423417454265586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1561,6 +1642,22 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 82000
+--- !u!114 &114429399787685762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: GameProgress
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114437916391539882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1593,6 +1690,29 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114447790820669168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Dialogue/HitManCharacter/HitmanSpeaking
+  guid: 2f87417fda395b459eafcd5f94b4a878
+  Banks:
+  - {fileID: 114499702501804332}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 82000
 --- !u!114 &114460263898145016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1655,7 +1775,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: /Users/nikolajdehaan/Game Audio/Level One Game Jam/Level One Game Jam/Level-One-Jam-19/Assets/Audio/FMOD
     built banks/Desktop/Master Bank.bank
-  lastModified: 636865728100000000
+  lastModified: 636865762440000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -1889,11 +2009,27 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 114969886312730340}
+  - {fileID: 114610648367109480}
   MinDistance: 1
   MaxDistance: 70
   Length: 3875
 --- !u!114 &114609664854094792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: GameProgress
+  Min: 0
+  Max: 100
+  Default: 0
+--- !u!114 &114610648367109480
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1964,6 +2100,22 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114624667252893538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: GameProgress
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114635428144092786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2000,7 +2152,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114779901359177424}
+  - {fileID: 114624667252893538}
   MinDistance: 0
   MaxDistance: 0
   Length: 96208
@@ -2256,6 +2408,22 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 82000
 --- !u!114 &114750911016848676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: GameProgress
+  Min: 0
+  Max: 100
+  Default: 0
+--- !u!114 &114753719050428468
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2566,6 +2734,22 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114848521057534380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: GameProgress
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114853686897525160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2683,6 +2867,22 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3428
+--- !u!114 &114887069096421206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: TrimmerCuttingHair
+  Min: 0
+  Max: 2
+  Default: 0
 --- !u!114 &114894415212005536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2752,6 +2952,22 @@ MonoBehaviour:
     Value: 870656
   Exists: 1
 --- !u!114 &114919095706430174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: GameProgress
+  Min: 0
+  Max: 100
+  Default: 0
+--- !u!114 &114919148399901078
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2902,6 +3118,22 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1835
+--- !u!114 &114966537368366880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: GameProgress
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114969886312730340
 MonoBehaviour:
   m_ObjectHideFlags: 0
