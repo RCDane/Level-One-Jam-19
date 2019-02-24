@@ -150,7 +150,7 @@ public class AudioManager : MonoBehaviour
     //Call when clicking stuff in the UI
     public void UIClickSound()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(wrongAnswer);
+        FMODUnity.RuntimeManager.PlayOneShot(ui_Click);
     }
 
     //Call when the trimmer tool is selected

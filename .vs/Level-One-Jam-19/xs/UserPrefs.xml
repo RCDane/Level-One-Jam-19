@@ -1,9 +1,7 @@
 ﻿<Properties StartupConfiguration="{ED8A4CED-F54A-FCE6-DC99-28E71243FE0E}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Audio/AudioManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Audio/AudioManagerMenu.cs">
     <Files>
-      <File FileName="Assets/Scripts/Audio/AudioManager.cs" Line="245" Column="6" />
-      <File FileName="../../../../Desktop/AudioManager(REFERENCE).cs" Line="197" Column="4" />
-      <File FileName="../../../PandaBall/PandaBall Unity projekt 2018.12.10/Assets/Scripts/Audio/MatchMusicController.cs" Line="36" Column="22" />
+      <File FileName="Assets/Scripts/Audio/AudioManagerMenu.cs" Line="39" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
