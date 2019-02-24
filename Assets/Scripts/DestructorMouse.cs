@@ -3,7 +3,6 @@ using System.Collections;
 
 public class DestructorMouse : MonoBehaviour
 {
-
     void OnMouseOver() // Triggers the following code when the mouse hovers over the object with this script attached to it
     {
         if (Input.GetMouseButton(0)) // Action started if the button pressed while hovering is the mouse left button
@@ -18,11 +17,11 @@ public class DestructorMouse : MonoBehaviour
     }
     void MultiplyHair() // Creates 6 clones of this game objects separated one unit each from one of the faces
     {
-        Instantiate(this.gameObject, this.transform.position + new Vector3(1, 0, 0), Quaternion.identity);
-        Instantiate(this.gameObject, this.transform.position + new Vector3(0, 1, 0), Quaternion.identity);
-        Instantiate(this.gameObject, this.transform.position + new Vector3(0, 0, 1), Quaternion.identity);
-        Instantiate(this.gameObject, this.transform.position + new Vector3(-1, 0, 0), Quaternion.identity);
-        Instantiate(this.gameObject, this.transform.position + new Vector3(0, -1, 0), Quaternion.identity);
-        Instantiate(this.gameObject, this.transform.position + new Vector3(0, 0, -1), Quaternion.identity);
+        Instantiate(this.gameObject, this.transform.position + new Vector3(1, 0, 0), Quaternion.identity,this.gameObject.transform.parent);
+        Instantiate(this.gameObject, this.transform.position + new Vector3(0, 1, 0), Quaternion.identity, this.gameObject.transform.parent);
+        Instantiate(this.gameObject, this.transform.position + new Vector3(0, 0, 1), Quaternion.identity, this.gameObject.transform.parent);
+        Instantiate(this.gameObject, this.transform.position + new Vector3(-1, 0, 0), Quaternion.identity, this.gameObject.transform.parent);
+        Instantiate(this.gameObject, this.transform.position + new Vector3(0, -1, 0), Quaternion.identity, this.gameObject.transform.parent);
+        Instantiate(this.gameObject, this.transform.position + new Vector3(0, 0, -1), Quaternion.identity, this.gameObject.transform.parent);
     }
 }
