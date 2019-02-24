@@ -115,10 +115,10 @@ public class AudioManager : MonoBehaviour
 
     // Call when the scissor is cutting
     //Remember to send the position (see how in the ScissorCutTestScript
-    public void ScissorCut(GameObject objectToAttachTo)
+    public void ScissorCut()
     {
         scissorCutInstance = FMODUnity.RuntimeManager.CreateInstance(scissorCutEvent);
-        FMODUnity.RuntimeManager.AttachInstanceToGameObject(scissorCutInstance, objectToAttachTo.transform, objectToAttachTo.GetComponent<Rigidbody>());
+        //FMODUnity.RuntimeManager.AttachInstanceToGameObject(scissorCutInstance, objectToAttachTo.transform, objectToAttachTo.GetComponent<Rigidbody>());
         scissorCutInstance.start();
         scissorCutInstance.release();
     }
@@ -154,10 +154,10 @@ public class AudioManager : MonoBehaviour
     }
 
     //Call when the trimmer tool is selected
-    public void TrimmerStart(GameObject objectToAttachTo)
+    public void TrimmerStart()
     {
         trimmerCutInstance = FMODUnity.RuntimeManager.CreateInstance(trimmerCutEvent);
-        FMODUnity.RuntimeManager.AttachInstanceToGameObject(trimmerCutInstance, objectToAttachTo.transform, objectToAttachTo.GetComponent<Rigidbody>());
+        //FMODUnity.RuntimeManager.AttachInstanceToGameObject(trimmerCutInstance, objectToAttachTo.transform, objectToAttachTo.GetComponent<Rigidbody>());
         trimmerCutInstance.start();
         trimmerCutInstance.release();
     }
@@ -182,10 +182,10 @@ public class AudioManager : MonoBehaviour
     }
 
     //Call every time lotion is applied
-    public void MagicLotionUse(GameObject objectToAttachTo)
+    public void MagicLotionUse()
     {
         magicLotionInstance = FMODUnity.RuntimeManager.CreateInstance(trimmerCutEvent);
-        FMODUnity.RuntimeManager.AttachInstanceToGameObject(magicLotionInstance, objectToAttachTo.transform, objectToAttachTo.GetComponent<Rigidbody>());
+        //FMODUnity.RuntimeManager.AttachInstanceToGameObject(magicLotionInstance, objectToAttachTo.transform, objectToAttachTo.GetComponent<Rigidbody>());
         magicLotionInstance.start();
         magicLotionInstance.release();
     }

@@ -16,6 +16,9 @@ public class Tools : MonoBehaviour
     [SerializeField]
     public int currentTool;
     float timer = 0;
+    //Nikolaj reference to audio
+    AudioManager audioManagerObject;
+
     private void Start()
     {
         cam = Camera.main;
@@ -28,6 +31,12 @@ public class Tools : MonoBehaviour
         {
             TryRemove();
         }
+        if (Input.GetMouseButtonDown(0) && currentTool == 1)
+            audioManagerObject.TrimmerStart();
+        else if (Input.GetMouseButtonDown(0) && currentTool == 1)
+            audioManagerObject.TrimmerStop();
+
+
     }
     void TryRemove()
     {
@@ -42,6 +51,21 @@ public class Tools : MonoBehaviour
                 hair.AddHair(hit.point, tools[currentTool].size);
 
             timer = Time.timeSinceLevelLoad;
+        }
+    }
+    void Playsound()
+    {
+        switch (currentTool)
+        {
+            case 0:
+                audioManagerObject.ScissorCut();
+                break;
+            case 1:
+                audioManagerObject.TrimmerCutHair();
+                break;
+            case 2:
+                audioManagerObject.MagicLotionUse();
+                break;
         }
     }
 }
