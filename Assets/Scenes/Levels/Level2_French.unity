@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -398,6 +398,7 @@ GameObject:
   - component: {fileID: 47759899}
   - component: {fileID: 47759898}
   - component: {fileID: 47759897}
+  - component: {fileID: 47759900}
   m_Layer: 0
   m_Name: Option 2
   m_TagString: Untagged
@@ -548,6 +549,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 47759895}
   m_CullTransparentMesh: 0
+--- !u!114 &47759900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47759895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/SFX/Dialogue/Player/PlayerReplies
+  PlayEvent: 11
+  StopEvent: 12
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &61036125
 GameObject:
   m_ObjectHideFlags: 0
@@ -4349,6 +4373,7 @@ GameObject:
   - component: {fileID: 556220147}
   - component: {fileID: 556220146}
   - component: {fileID: 556220145}
+  - component: {fileID: 556220148}
   m_Layer: 0
   m_Name: Option 1
   m_TagString: Untagged
@@ -4499,6 +4524,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 556220143}
   m_CullTransparentMesh: 0
+--- !u!114 &556220148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556220143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/SFX/Dialogue/Player/PlayerReplies
+  PlayEvent: 11
+  StopEvent: 12
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &564131460
 GameObject:
   m_ObjectHideFlags: 0
@@ -7741,6 +7789,7 @@ GameObject:
   - component: {fileID: 946530331}
   - component: {fileID: 946530330}
   - component: {fileID: 946530329}
+  - component: {fileID: 946530332}
   m_Layer: 5
   m_Name: Answer 1
   m_TagString: Untagged
@@ -7827,6 +7876,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 946530327}
   m_CullTransparentMesh: 0
+--- !u!114 &946530332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946530327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/SFX/Dialogue/FrenchCharacter/WrongAnswer
+  PlayEvent: 11
+  StopEvent: 12
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &949969725
 GameObject:
   m_ObjectHideFlags: 0
@@ -7969,6 +8041,7 @@ GameObject:
   - component: {fileID: 960539908}
   - component: {fileID: 960539907}
   - component: {fileID: 960539906}
+  - component: {fileID: 960539909}
   m_Layer: 5
   m_Name: Answer 3
   m_TagString: Untagged
@@ -8060,6 +8133,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 960539904}
   m_CullTransparentMesh: 0
+--- !u!114 &960539909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960539904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/SFX/Dialogue/FrenchCharacter/CorrectAnswer
+  PlayEvent: 11
+  StopEvent: 12
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!4 &992901152 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 58d5f43278ef82d46bc817ff47712af2,
@@ -9598,6 +9694,7 @@ GameObject:
   - component: {fileID: 1249552893}
   - component: {fileID: 1249552892}
   - component: {fileID: 1249552891}
+  - component: {fileID: 1249552894}
   m_Layer: 5
   m_Name: Answer 2
   m_TagString: Untagged
@@ -9689,6 +9786,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249552889}
   m_CullTransparentMesh: 0
+--- !u!114 &1249552894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249552889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/SFX/Dialogue/FrenchCharacter/WrongAnswer
+  PlayEvent: 11
+  StopEvent: 12
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &1250081329
 GameObject:
   m_ObjectHideFlags: 0
@@ -12878,7 +12998,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1634376358}
   - component: {fileID: 1634376357}
-  - component: {fileID: 1634376356}
   - component: {fileID: 1634376359}
   m_Layer: 0
   m_Name: Main Camera
@@ -12887,14 +13006,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1634376356
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1634376355}
-  m_Enabled: 0
 --- !u!20 &1634376357
 Camera:
   m_ObjectHideFlags: 0
@@ -12959,7 +13070,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1634376355}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
   m_Name: 
@@ -13015,6 +13126,7 @@ GameObject:
   - component: {fileID: 1683061936}
   - component: {fileID: 1683061935}
   - component: {fileID: 1683061934}
+  - component: {fileID: 1683061937}
   m_Layer: 0
   m_Name: Option 3
   m_TagString: Untagged
@@ -13165,6 +13277,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1683061932}
   m_CullTransparentMesh: 0
+--- !u!114 &1683061937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683061932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/SFX/Dialogue/Player/PlayerReplies
+  PlayEvent: 11
+  StopEvent: 12
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1001 &1697091400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16541,6 +16676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a347d10c8e9262148a094c2c49779938, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManagerObject: {fileID: 0}
 --- !u!1001 &2094978352
 PrefabInstance:
   m_ObjectHideFlags: 0
