@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1429,6 +1429,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 314084710909824449, guid: 192beec3d0973bd42836e5ed36ee7410,
+        type: 3}
+      propertyPath: audioManagerObject
+      value: 
+      objectReference: {fileID: 1871396169}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 192beec3d0973bd42836e5ed36ee7410, type: 3}
 --- !u!1001 &122907881
@@ -2121,7 +2126,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &341323232
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7932,6 +7937,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5974959803677719384, guid: 1902c4e54bfa6496fab12477621a61d2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5974959803677719390, guid: 1902c4e54bfa6496fab12477621a61d2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7991,7 +8001,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 643672524, guid: 1902c4e54bfa6496fab12477621a61d2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1902c4e54bfa6496fab12477621a61d2, type: 3}
 --- !u!1 &1053498926
 GameObject:
@@ -12520,7 +12531,6 @@ GameObject:
   - component: {fileID: 1634376358}
   - component: {fileID: 1634376357}
   - component: {fileID: 1634376356}
-  - component: {fileID: 1634376359}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -12528,14 +12538,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1634376356
-AudioListener:
+--- !u!114 &1634376356
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1634376355}
-  m_Enabled: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListenerNumber: 0
 --- !u!20 &1634376357
 Camera:
   m_ObjectHideFlags: 0
@@ -12593,19 +12608,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 17.208, y: 179.99998, z: 0}
---- !u!114 &1634376359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1634376355}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ListenerNumber: 0
 --- !u!1 &1649191899
 GameObject:
   m_ObjectHideFlags: 0
@@ -14072,6 +14074,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1866870712}
   m_CullTransparentMesh: 0
+--- !u!114 &1871396169 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5974959803677719385, guid: 1902c4e54bfa6496fab12477621a61d2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1016801385}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6106c2ea8ddc43f1ba0a874a873f740, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1877365953 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: c117ece7dce08b2499706f60c563e188,
@@ -15999,6 +16013,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a347d10c8e9262148a094c2c49779938, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManagerObject: {fileID: 1871396169}
 --- !u!1001 &2094978352
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114511149392392216}
-  - {fileID: 114553625122076624}
+  - {fileID: 114258477126212288}
   EditorEvents:
   - {fileID: 114608972185706012}
   - {fileID: 114079178562980666}
@@ -40,7 +39,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 114252027944365648}
   - {fileID: 114511149392392216}
-  stringsBankWriteTime: 636865837521952404
+  stringsBankWriteTime: 636866057600000000
   cacheVersion: 3
 --- !u!114 &114010991955255614
 MonoBehaviour:
@@ -57,6 +56,42 @@ MonoBehaviour:
   Name: GameProgress
   Min: 0
   Max: 100
+  Default: 0
+--- !u!114 &114014626698171218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/nikolajdehaan/Game Audio/Level One Game Jam/Level One Game Jam/Level-One-Jam-19/Assets/Audio/FMOD
+    built banks/Desktop/Master Bank.bank
+  lastModified: 636865762440000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 5202208
+  Exists: 1
+--- !u!114 &114015922332878616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: TrimmerCuttingHair
+  Min: 0
+  Max: 2
   Default: 0
 --- !u!114 &114018668533268212
 MonoBehaviour:
@@ -121,7 +156,7 @@ MonoBehaviour:
   Path: event:/SFX/NewCustomer
   guid: 7a5acd69f12ebe4282c63b3ae8534006
   Banks:
-  - {fileID: 114553625122076624}
+  - {fileID: 114258477126212288}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -162,6 +197,22 @@ MonoBehaviour:
   Max: 100
   Default: 0
 --- !u!114 &114036396173102328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: GameProgress
+  Min: 0
+  Max: 100
+  Default: 0
+--- !u!114 &114036962546011076
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -225,6 +276,22 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
+--- !u!114 &114050219280732672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: GameProgress
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114054294905949486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,6 +309,22 @@ MonoBehaviour:
   Max: 100
   Default: 0
 --- !u!114 &114056848097922462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: GameProgress
+  Min: 0
+  Max: 100
+  Default: 0
+--- !u!114 &114060147812992286
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -339,7 +422,7 @@ MonoBehaviour:
   Path: event:/SFX/Ambience
   guid: 8a6e3e8cbe075448b2643a7f57274cd0
   Banks:
-  - {fileID: 114553625122076624}
+  - {fileID: 114258477126212288}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -511,6 +594,22 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114103013985013172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: GameProgress
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114116221642806312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -526,7 +625,7 @@ MonoBehaviour:
   Path: event:/SFX/Dialogue/HitManCharacter/HitmanWrongAnswer
   guid: 133789c41397594881b73d148d86ca7d
   Banks:
-  - {fileID: 114553625122076624}
+  - {fileID: 114258477126212288}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -581,7 +680,7 @@ MonoBehaviour:
   Path: event:/SFX/UI/UI_Click
   guid: 09afc1f89d16a24bb569bb55313c3069
   Banks:
-  - {fileID: 114553625122076624}
+  - {fileID: 114258477126212288}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -636,7 +735,7 @@ MonoBehaviour:
   Path: event:/SFX/Dialogue/HitManCharacter/HitmanCorrectAnswer
   guid: 5039160b55bea1449d1afa3dca74d9f5
   Banks:
-  - {fileID: 114553625122076624}
+  - {fileID: 114258477126212288}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -731,7 +830,7 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
---- !u!114 &114176999402712022
+--- !u!114 &114164507490796754
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -795,22 +894,6 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
---- !u!114 &114192832694526222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: TrimmerCuttingHair
-  Min: 0
-  Max: 2
-  Default: 0
 --- !u!114 &114203915467203242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -858,13 +941,13 @@ MonoBehaviour:
   Path: event:/SFX/Tools/Trimmer
   guid: 86b997e38e3ada42a34fb18d2b594335
   Banks:
-  - {fileID: 114553625122076624}
+  - {fileID: 114258477126212288}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 114192832694526222}
-  - {fileID: 114671939138131440}
+  - {fileID: 114803297841881774}
+  - {fileID: 114994232284263414}
   MinDistance: 1
   MaxDistance: 70
   Length: 31536
@@ -1131,12 +1214,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets/Audio/FMOD built banks/Desktop/Master Bank.strings.bank
-  lastModified: 636865762440000000
+  lastModified: 636866057600000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 1542
-  Exists: 0
+  Exists: 1
+--- !u!114 &114258477126212288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/nikolajdehaan/Game Audio/Level One Game Jam/Level One Game Jam/Level-One-Jam-19/Assets/Audio/FMOD
+    built banks/Desktop/Master Bank.bank
+  lastModified: 636866057600000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 5202208
+  Exists: 1
 --- !u!114 &114260570861925276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1305,12 +1408,12 @@ MonoBehaviour:
   Path: event:/SFX/Tools/MagicLotion
   guid: 882edd97845d36419627783efceef47f
   Banks:
-  - {fileID: 114553625122076624}
+  - {fileID: 114258477126212288}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 114663208208735860}
+  - {fileID: 114060147812992286}
   MinDistance: 1
   MaxDistance: 20
   Length: 4000
@@ -1411,22 +1514,6 @@ MonoBehaviour:
   Max: 100
   Default: 0
 --- !u!114 &114317769104189842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: GameProgress
-  Min: 0
-  Max: 100
-  Default: 0
---- !u!114 &114324112282646092
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1585,7 +1672,7 @@ MonoBehaviour:
   Path: event:/SFX/Dialogue/Player/PlayerReplies
   guid: 12a623dc2fb3794eb40ee7cc54233690
   Banks:
-  - {fileID: 114553625122076624}
+  - {fileID: 114258477126212288}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1624,6 +1711,22 @@ MonoBehaviour:
   Name: GameProgress
   Min: 0
   Max: 100
+  Default: 0
+--- !u!114 &114395845854792856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: TrimmerCuttingHair
+  Min: 0
+  Max: 2
   Default: 0
 --- !u!114 &114401196952865852
 MonoBehaviour:
@@ -1784,7 +1887,7 @@ MonoBehaviour:
   Path: event:/SFX/Dialogue/FrenchCharacter/FrenchSpeaking
   guid: 0e4c1da17d2acc47b747cd8a4e12d51e
   Banks:
-  - {fileID: 114553625122076624}
+  - {fileID: 114258477126212288}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -1855,13 +1958,13 @@ MonoBehaviour:
   Path: event:/SFX/Dialogue/HitManCharacter/HitmanSpeaking
   guid: 2f87417fda395b459eafcd5f94b4a878
   Banks:
-  - {fileID: 114553625122076624}
+  - {fileID: 114258477126212288}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 300
   Length: 82000
 --- !u!114 &114460263898145016
 MonoBehaviour:
@@ -1880,6 +1983,22 @@ MonoBehaviour:
   Max: 100
   Default: 0
 --- !u!114 &114474838331674244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: GameProgress
+  Min: 0
+  Max: 100
+  Default: 0
+--- !u!114 &114479211178805234
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1960,12 +2079,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\Audio\FMOD built banks\Desktop\Master Bank.strings.bank
-  lastModified: 636865837521952404
+  lastModified: 636866021257820835
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 1542
-  Exists: 1
+  Exists: 0
+--- !u!114 &114515275310400268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: GameProgress
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114525714394484898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1983,6 +2118,22 @@ MonoBehaviour:
   Max: 2
   Default: 0
 --- !u!114 &114527404672978466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: GameProgress
+  Min: 0
+  Max: 100
+  Default: 0
+--- !u!114 &114529481173276058
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2078,26 +2229,6 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
---- !u!114 &114553625122076624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\Villa\OneDrive\Documentos\Level-One-Jam-19\Assets\Audio\FMOD built
-    banks\Desktop\Master Bank.bank
-  lastModified: 636865837521922475
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 5202208
-  Exists: 1
 --- !u!114 &114562989529927300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2241,12 +2372,12 @@ MonoBehaviour:
   Path: event:/SFX/Tools/ScissorCut
   guid: 45175b350ca7404fa4e47349a841b1f9
   Banks:
-  - {fileID: 114553625122076624}
+  - {fileID: 114258477126212288}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 114324112282646092}
+  - {fileID: 114479211178805234}
   MinDistance: 1
   MaxDistance: 70
   Length: 3875
@@ -2353,6 +2484,22 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114633791701622616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: GameProgress
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114635428144092786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2384,12 +2531,12 @@ MonoBehaviour:
   Path: event:/Music/Music
   guid: 30d1017dfa463948952fef8b43d7b517
   Banks:
-  - {fileID: 114553625122076624}
+  - {fileID: 114258477126212288}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114176999402712022}
+  - {fileID: 114633791701622616}
   MinDistance: 0
   MaxDistance: 0
   Length: 96208
@@ -2429,6 +2576,22 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114651804046455232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: GameProgress
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114652672459739158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2452,22 +2615,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 66591
---- !u!114 &114663208208735860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: GameProgress
-  Min: 0
-  Max: 100
-  Default: 0
 --- !u!114 &114665649823170108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2501,22 +2648,6 @@ MonoBehaviour:
   Max: 100
   Default: 0
 --- !u!114 &114669899881511206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: GameProgress
-  Min: 0
-  Max: 100
-  Default: 0
---- !u!114 &114671939138131440
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2602,7 +2733,7 @@ MonoBehaviour:
   Path: event:/SFX/Dialogue/FrenchCharacter/CorrectAnswer
   guid: 1dc3abaf52f0e74982401027ec8df78a
   Banks:
-  - {fileID: 114553625122076624}
+  - {fileID: 114258477126212288}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2610,6 +2741,22 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3441
+--- !u!114 &114720684518556740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: GameProgress
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114725244920484784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2888,6 +3035,22 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114803297841881774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: TrimmerCuttingHair
+  Min: 0
+  Max: 2
+  Default: 0
 --- !u!114 &114803346137821448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2951,7 +3114,7 @@ MonoBehaviour:
   Path: event:/SFX/Dialogue/FrenchCharacter/WrongAnswer
   guid: 142cc4b65f8f69479ee8baede97941b5
   Banks:
-  - {fileID: 114553625122076624}
+  - {fileID: 114258477126212288}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -3086,7 +3249,7 @@ MonoBehaviour:
   Path: event:/SFX/UI/WrongAnswer
   guid: f74751060384bd4aa8fb93cc6c51ec70
   Banks:
-  - {fileID: 114553625122076624}
+  - {fileID: 114258477126212288}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3164,7 +3327,7 @@ MonoBehaviour:
   Path: event:/SFX/UI/CorrectAnswer
   guid: 02a10bf6231e9348b491b016b8177af9
   Banks:
-  - {fileID: 114553625122076624}
+  - {fileID: 114258477126212288}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3534,7 +3697,7 @@ MonoBehaviour:
   Path: event:/SFX/ChairRotate
   guid: a7f2c7eaa5b63847a525c07c810e39e0
   Banks:
-  - {fileID: 114553625122076624}
+  - {fileID: 114258477126212288}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3581,6 +3744,22 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 882
+--- !u!114 &114994232284263414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: GameProgress
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114999258527881942
 MonoBehaviour:
   m_ObjectHideFlags: 0
