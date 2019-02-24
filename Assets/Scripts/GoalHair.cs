@@ -14,6 +14,9 @@ public class GoalHair : MonoBehaviour
     public Text EndText;
     public GameObject EndMessage;
     private int extraScore;
+    public GameObject Star1;
+    public GameObject Star2;
+    public GameObject Star3;
     private void OnTriggerEnter(Collider other) //Collision detection with tagged GameObjects as "PlayerHair"
         {
             if (other.tag == "PlayerHair")
@@ -37,17 +40,26 @@ public class GoalHair : MonoBehaviour
         {
             Debug.Log("Score =" + score); //Creates a log of the score
             EndText.text = "(Not that)Badbershop!";
+            Star1.GetComponent<Image>().color = new Color32(255, 255, 225, 200);
+            Star2.GetComponent<Image>().color = new Color32(255, 255, 225, 200);
+            Star3.GetComponent<Image>().color = new Color32(255, 255, 225, 200);
         }
         else if (60 > score && score >= 30)
         { 
             Debug.Log("Score =" + score);
             EndText.text = "At least you are trying" ;
+            Star1.GetComponent<Image>().color = new Color32(255, 255, 225, 200);
+            Star2.GetComponent<Image>().color = new Color32(255, 255, 225, 200);
+            Star3.GetComponent<Image>().color = new Color32(255, 255, 225, 30);
         }
 
         else
         {
             Debug.Log("Score =" + score);
             EndText.text = "You suck :)";
+            Star1.GetComponent<Image>().color = new Color32(255, 255, 225, 200);
+            Star2.GetComponent<Image>().color = new Color32(255, 255, 225, 30);
+            Star3.GetComponent<Image>().color = new Color32(255, 255, 225, 30);
         }
     }
     public void IncreaseScore(int increase)
