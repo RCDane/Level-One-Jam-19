@@ -16,7 +16,7 @@ public class ScissorCutTestScript : MonoBehaviour
     {
         if (Input.GetKeyDown("c"))
         {
-            audioManager.ScissorCut(gameObject);
+            audioManager.ScissorCut();
             print("c key was pressed");
         }
 

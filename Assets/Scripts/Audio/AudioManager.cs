@@ -123,7 +123,7 @@ public class AudioManager : MonoBehaviour
         scissorCutInstance.release();
     }
 
-    //Call when rotating the chair...
+    //Call when rotating the chair...   
     public void ChairRotate()
     {
         FMODUnity.RuntimeManager.PlayOneShot(chairRotate);

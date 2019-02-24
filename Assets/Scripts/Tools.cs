@@ -17,7 +17,7 @@ public class Tools : MonoBehaviour
     public int currentTool;
     float timer = 0;
     //Nikolaj reference to audio
-    AudioManager audioManagerObject;
+    public AudioManager audioManagerObject;
 
     private void Start()
     {
