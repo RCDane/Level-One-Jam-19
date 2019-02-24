@@ -109,6 +109,10 @@ public class VoxelHair : MonoBehaviour
         //        VoxelsToGoThrough.Add(activeVoxels[i]);
         //    }
         //}
+        Vector3 rotation = new Vector3(transform.right.x, transform.up.y, transform.forward.z);
+        Vector3 tposition = transform.position;
+        print(tposition);
+        print(pos1);
         for (int i = 0; i < voxels.GetLength(0); i++)
         {
             for (int j = 0; j < voxels.GetLength(1); j++)
@@ -117,7 +121,7 @@ public class VoxelHair : MonoBehaviour
                 {
                     if (voxels[i, j, k].hasHair)
                     {
-                        Vector3 voxelPos = voxels[i, j, k].pos;
+                        Vector3 voxelPos = GetPosition(voxels[i, j, k].info,transform, tposition);
                         if (distance * distance > Vector3.SqrMagnitude(pos1 - voxelPos))
                         {
                             VoxelsToGoThrough.Add(voxels[i, j, k]);
@@ -156,7 +160,7 @@ public class VoxelHair : MonoBehaviour
         voxels[x, y, z].isActive = true;
         VoxelObj vox = inActiveVoxels.Pop();
         vox.index = voxels[x, y, z].voxelIndex;
-        vox.transform.position = position;
+        vox.transform.position = transform.position + position.x * transform.right + position.y * transform.up + position.z * transform.forward;
         vox.GetComponent<VoxelObj>().position = position;
         voxels[x, y, z].info.x = position.x;
         voxels[x, y, z].info.y = position.y;
@@ -259,6 +263,8 @@ public class VoxelHair : MonoBehaviour
         //        VoxelsToGoThrough.Add(activeVoxels[i]);
         //    }
         //}
+        Vector3 rotation = new Vector3(transform.right.x, transform.up.y, transform.forward.z);
+        Vector3 position = transform.position;
         for (int i = 0; i < voxels.GetLength(0); i++)
         {
             for (int j = 0; j < voxels.GetLength(1); j++)
@@ -267,7 +273,7 @@ public class VoxelHair : MonoBehaviour
                 {
                     if (!voxels[i, j, k].hasHair)
                     {
-                        Vector3 voxelPos = voxels[i, j, k].pos;
+                        Vector3 voxelPos = GetPosition(voxels[i, j, k].info, transform,position);
                         if (size * size > Vector3.SqrMagnitude(pos1 - voxelPos))
                         {
                             VoxelsToGoThrough.Add(voxels[i, j, k]);
@@ -296,6 +302,11 @@ public class VoxelHair : MonoBehaviour
             //}
         }
         Optimize();
+    }
+
+    Vector3 GetPosition(Vector3 pos, Transform rotation, Vector3 position)
+    {
+        return rotation.right * pos.x + pos.y * rotation.up+ pos.z * rotation.forward + position;
     }
     bool hasEmptyNear(Vector3Int pos)
     {
@@ -360,12 +371,7 @@ public class VoxelHair : MonoBehaviour
         return hasEmptyNeighbor;
     }
 
-    private void OnGUI()
-    {
-        bool pressed = GUI.Button(new Rect(100, 100, 100, 100), "optimize");
-        if (pressed)
-            Optimize();
-    }
+   
 }
 [System.Serializable]
 public struct Voxel
