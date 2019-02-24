@@ -14,7 +14,7 @@ public class Tools : MonoBehaviour
     [SerializeField]
     Tool[] tools;
     [SerializeField]
-    int currentTool;
+    public int currentTool;
     float timer = 0;
     private void Start()
     {

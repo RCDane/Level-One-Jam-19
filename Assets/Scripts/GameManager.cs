@@ -4,17 +4,18 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
-    public float TotalTime = 60f;
+    public float TotalTime = 120f;
     public Text TimeLeft;
     public GameObject[] TextList;
     public GameObject Options;
     public GameObject Answers;
     public GameObject Goal;
+    public GameObject SpeechBubble;
     private int i = 0;
 
     void Start()
     {
-        InvokeRepeating("NextDialogue", 5,Random.Range(5,15));
+        InvokeRepeating("NextDialogue", 5,Random.Range(15, 25));
     }
     void Update()
     {
@@ -43,8 +44,9 @@ public class GameManager : MonoBehaviour
                 Answers.gameObject.SetActive(false);
             }
         }
+        SpeechBubble.SetActive(true);
         TextList[i].SetActive(true);
         i++;
-        //To be implemented
+        //To be implemented a method for making the speech bubble and the text disappear after 5 seconds
     }
 }
