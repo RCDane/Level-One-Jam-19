@@ -247,9 +247,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ambienceLoop: event:/SFX/Ambience
-  musicEvent: 
+  newCustomerEnter: event:/SFX/NewCustomer
+  correctAnswer: event:/SFX/UI/CorrectAnswer
+  wrongAnswer: event:/SFX/UI/WrongAnswer
+  chairRotate: event:/SFX/ChairRotate
+  ui_Click: event:/SFX/UI/UI_Click
+  frenchCorrectAnswer: event:/SFX/Dialogue/FrenchCharacter/CorrectAnswer
+  frenchWrongAnswer: event:/SFX/Dialogue/FrenchCharacter/WrongAnswer
+  musicEvent: event:/Music/Music
   scissorCutEvent: event:/SFX/Tools/ScissorCut
-  haircutProgress: 
+  trimmerCutEvent: event:/SFX/Tools/Trimmer
+  magicLotionEvent: event:/SFX/Tools/MagicLotion
+  frenchSpeakingEvent: event:/SFX/Dialogue/FrenchCharacter/FrenchSpeaking
+  playerReplyingEvent: event:/SFX/Dialogue/Player/PlayerReplies
+  haircutProgressParameter: GameProgress
+  trimmerCuttingHairparameter: TrimmerCuttinHair
 --- !u!4 &643672524
 Transform:
   m_ObjectHideFlags: 0

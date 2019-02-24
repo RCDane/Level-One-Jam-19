@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{ED8A4CED-F54A-FCE6-DC99-28E71243FE0E}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Audio/ScissorCutTestScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Audio/AudioManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/Audio/AudioManager.cs" Line="41" Column="8" />
-      <File FileName="../../../../Desktop/AudioManager(REFERENCE).cs" Line="222" Column="33" />
-      <File FileName="Assets/Scripts/Audio/ScissorCutTestScript.cs" Line="5" Column="14" />
+      <File FileName="Assets/Scripts/Audio/AudioManager.cs" Line="206" Column="31" />
+      <File FileName="../../../../Desktop/AudioManager(REFERENCE).cs" Line="197" Column="4" />
+      <File FileName="Assets/Scripts/Audio/ScissorCutTestScript.cs" Line="25" Column="1" />
+      <File FileName="../../../PandaBall/PandaBall Unity projekt 2018.12.10/Assets/Scripts/Audio/MatchMusicController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
