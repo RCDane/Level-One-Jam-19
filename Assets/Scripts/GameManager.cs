@@ -47,6 +47,6 @@ public class GameManager : MonoBehaviour
         SpeechBubble.SetActive(true);
         TextList[i].SetActive(true);
         i++;
-        //To be implemented
+        //To be implemented a method for making the speech bubble and the text disappear after 5 seconds
     }
 }
