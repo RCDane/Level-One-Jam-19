@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public GameObject Options;
     public GameObject Answers;
     public GameObject Goal;
+    public GameObject SpeechBubble;
     private int i = 0;
 
     void Start()
@@ -43,6 +44,7 @@ public class GameManager : MonoBehaviour
                 Answers.gameObject.SetActive(false);
             }
         }
+        SpeechBubble.SetActive(true);
         TextList[i].SetActive(true);
         i++;
         //To be implemented
