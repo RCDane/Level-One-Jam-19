@@ -12,7 +12,14 @@ public class MagnifyOnHovering : MonoBehaviour
     }
     private void OnMouseExit()
     {
-        transform.localScale = new Vector3(10, 10, 10); // Returns the scale of the object back to (10,10,10)
+        if (this.name == "Tool2_3D")
+        {
+            transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
+        }
+        else
+        {
+            transform.localScale = new Vector3(1, 1, 1); // Returns the scale of the object back to (10,10,10)
+        }
     }
         void OnMouseDown()
         {
