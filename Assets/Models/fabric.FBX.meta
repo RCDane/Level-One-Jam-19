@@ -1,22 +1,14 @@
 fileFormatVersion: 2
-guid: 77205a98cb3bb4f44890a67d0f76fb01
+guid: 65f8ec5fa687a884f8b60421c843d76b
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: chair
-    100002: //RootNode
-    400000: chair
-    400002: //RootNode
-    2100000: grey
-    2100002: red
-    2100004: 'Material #32'
-    2100006: 'Material #31'
-    2100008: 'Material #30'
-    2100010: 'Material #34'
-    2100012: 'Material #33'
-    2300000: chair
-    3300000: chair
-    4300000: chair
+    100000: //RootNode
+    400000: //RootNode
+    2100000: No Name
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: fabric
   externalObjects: {}
   materials:
     importMaterials: 1

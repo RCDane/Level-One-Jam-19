@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a6e8409191d6faf4bbcad58500aded17
+guid: cd2f200a3a362e44e9561b2ff964e71f
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -8,7 +8,7 @@ ModelImporter:
     2100000: No Name
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Man
+    4300000: wood_sign
   externalObjects: {}
   materials:
     importMaterials: 1
