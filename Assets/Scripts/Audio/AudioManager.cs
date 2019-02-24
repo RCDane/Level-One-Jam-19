@@ -123,6 +123,36 @@ public class AudioManager : MonoBehaviour
         scissorCutInstance.release();
     }
 
+    //Call when rotating the chair...
+    public void ChairRotate()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(chairRotate);
+    }
+
+    //Call when new customer enters...
+    public void NewCustomerEnter()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(newCustomerEnter);
+    }
+
+    //Call when selectring the correct answer...
+    public void CorrectAnswerUISound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(correctAnswer);
+    }
+
+    //Call when selectring the wronganswer...
+    public void WrongAnswerUISound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(wrongAnswer);
+    }
+
+    //Call when clicking stuff in the UI
+    public void UIClickSound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(wrongAnswer);
+    }
+
     //Call when the trimmer tool is selected
     public void TrimmerStart(GameObject objectToAttachTo)
     {
@@ -168,8 +198,8 @@ public class AudioManager : MonoBehaviour
         musicInstance.release();
     }
 
-    // Call when client starts speaking
-    //3D sound, needs to be attached to the mouth game object
+    /* Call when client starts speaking
+    3D sound, needs to be attached to the mouth game object*/
     public void FrenchSpeakStart(GameObject objectToAttachTo)
     {
         frenchSpeakingInstance = FMODUnity.RuntimeManager.CreateInstance(frenchSpeakingEvent);
@@ -184,9 +214,24 @@ public class AudioManager : MonoBehaviour
         frenchSpeakingInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 
-    // Call when the player is replying
-    //3D sound, needs to be attached to the mouth game object
-    public void PlaterReplyStart(GameObject objectToAttachTo)
+    //Call when answering correctly to a the French customer (should preferably get the gameObject from the mouth)
+    public void FrenchCorrectAnswerReply()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(frenchCorrectAnswer);
+        //FMODUnity.RuntimeManager.PlayOneShot(objectToAttachTo, frenchCorrectAnswer);
+    }
+
+    //Call when answering wrongto a the French customer (should preferably get the gameObject from the mouth)
+    public void FrenchWrongAnswerReply()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(frenchWrongAnswer);
+        //FMODUnity.RuntimeManager.PlayOneShot(objectToAttachTo, frenchWrongAnswer);
+
+    }
+
+    /* Call when the player is replying
+    3D sound need to get the gameObject from the mouth */
+    public void PlayerReplyStart(GameObject objectToAttachTo)
     {
         playerReplyingInstance = FMODUnity.RuntimeManager.CreateInstance(playerReplyingEvent);
         playerReplyingInstance.start();
@@ -199,8 +244,8 @@ public class AudioManager : MonoBehaviour
         playerReplyingInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 
-    // Call when client starts speaking
-    //3D sound, needs to be attached to the mouth game object
+    /* Call when client starts speaking
+    3D soundneed to get the gameObject from the mouth */
     public void HitmanSpeakStart(GameObject objectToAttachTo)
     {
         hitmanSpeakingInstance = FMODUnity.RuntimeManager.CreateInstance(hitmanSpeakingEvent);
@@ -213,6 +258,20 @@ public class AudioManager : MonoBehaviour
     public void HitmanSpeakStop()
     {
         hitmanSpeakingInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    }
+
+    //Call when answering correctly to Hitman himself (should preferably get the gameObject from the mouth)
+    public void HitmanCorrectAnswerReply()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(hitmanCorrectAnswer);
+        //FMODUnity.RuntimeManager.PlayOneShot(objectToAttachTo, hitmanCorrectAnswer);
+    }
+
+    //Call when answering wrong to a Hitman himself (should preferably get the gameObject from the mouth)
+    public void HitmanWrongAnswerReply()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(hitmanWrongAnswer);
+        //FMODUnity.RuntimeManager.PlayOneShotAttached(objectToAttachTo, hitmanWrongAnswer);
     }
 
     //This method should be called as the haircut progresses, so the haircurProgressPercentage parameter is at 100 when the time is over.
