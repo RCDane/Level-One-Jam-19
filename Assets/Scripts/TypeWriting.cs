@@ -26,6 +26,7 @@ public class TypeWriting : MonoBehaviour
         }
         yield return new WaitForSeconds(1);
         options.gameObject.SetActive(true);
+        this.gameObject.SetActive(false);
 
     }
 }

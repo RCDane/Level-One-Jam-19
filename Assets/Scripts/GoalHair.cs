@@ -10,7 +10,7 @@ public class GoalHair : MonoBehaviour
     // is delayed 2 seconds with the Invoke() function. The ideal solution to this problem would be to only call the FinalScore()
     // when no more objects are colliding with the body (Still working on a solution for this, but by now this will do)
 
-    int score = 100; // An integer data type for having the score value
+    int score = 0; // An integer data type for having the score value
     public Text EndText;
     public GameObject EndMessage;
     private int extraScore;
@@ -22,7 +22,7 @@ public class GoalHair : MonoBehaviour
             if (other.tag == "PlayerHair")
             {
             // The code substracts one from the score, logs the object collided with and destroys it
-                score--;
+                score++;
                 Debug.Log("Collision detected at" + other.transform);
                 Destroy(other.gameObject);
             }
@@ -36,7 +36,7 @@ public class GoalHair : MonoBehaviour
         }
     public void FinalScore()
     {
-        if (100 >= score && score >= 60)
+        if (score >= 60)
         {
             Debug.Log("Score =" + score); //Creates a log of the score
             EndText.text = "(Not that)Badbershop!";
@@ -56,7 +56,7 @@ public class GoalHair : MonoBehaviour
         else
         {
             Debug.Log("Score =" + score);
-            EndText.text = "You suck :)";
+            EndText.text = "You suck at this :)";
             Star1.GetComponent<Image>().color = new Color32(255, 255, 225, 200);
             Star2.GetComponent<Image>().color = new Color32(255, 255, 225, 30);
             Star3.GetComponent<Image>().color = new Color32(255, 255, 225, 30);
