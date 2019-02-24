@@ -157,6 +157,7 @@ public class AudioManager : MonoBehaviour
     //Call when the trimmer tool is selected
     public void TrimmerStart()
     {
+        print("trimmer start");
         trimmerCutInstance = FMODUnity.RuntimeManager.CreateInstance(trimmerCutEvent);
         //FMODUnity.RuntimeManager.AttachInstanceToGameObject(trimmerCutInstance, objectToAttachTo.transform, objectToAttachTo.GetComponent<Rigidbody>());
         trimmerCutInstance.start();
@@ -167,7 +168,6 @@ public class AudioManager : MonoBehaviour
     public void TrimmerCutHair()
     {
         trimmerCutInstance.setParameterValue(trimmerCuttingHairparameter, 1.0f);
-
     }
 
     //Call when the trimmer is NOT trimming hair

@@ -21,19 +21,24 @@ public class Tools : MonoBehaviour
 
     private void Start()
     {
+        if(currentTool == 1)
+        {
+            audioManagerObject.TrimmerStart();
+            trimmerRunning = true;
+        }
         cam = Camera.main;
         hair = FindObjectOfType<VoxelHair>() as VoxelHair;
     }
-
+    bool trimmerRunning = false;
     private void Update()
     {
         if(Input.GetMouseButton(0) && timer + tools[currentTool].speed < Time.timeSinceLevelLoad)
         {
             TryRemove();
         }
-        if (Input.GetMouseButtonDown(0) && currentTool == 1)
+        if (Input.GetMouseButtonDown(0) && currentTool == 1 && !trimmerRunning)
             audioManagerObject.TrimmerStart();
-        else if (Input.GetMouseButtonDown(0) && currentTool == 1)
+        else if (Input.GetMouseButtonDown(0) && currentTool != 1 && trimmerRunning)
             audioManagerObject.TrimmerStop();
 
 
@@ -49,7 +54,7 @@ public class Tools : MonoBehaviour
                 hair.RemoveHair(hit.point, tools[currentTool].size);
             else
                 hair.AddHair(hit.point, tools[currentTool].size);
-
+            Playsound();
             timer = Time.timeSinceLevelLoad;
         }
     }
@@ -62,6 +67,7 @@ public class Tools : MonoBehaviour
                 break;
             case 1:
                 audioManagerObject.TrimmerCutHair();
+                print("trimmer cut hair");
                 break;
             case 2:
                 audioManagerObject.MagicLotionUse();

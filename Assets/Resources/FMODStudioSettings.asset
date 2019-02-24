@@ -63,8 +63,4 @@ MonoBehaviour:
   Plugins: []
   MasterBanks:
   - Master Bank
-  - C:\Users\Villa\OneDrive\Documentos\Level-One-Jam-19\Assets\Audio\FMOD built banks\Desktop\Master
-    Bank
-  - C:\Repos\Level One Jam 19\Assets\Audio\FMOD built banks\Desktop\Master Bank
-  Banks:
-  - Master Bank
+  Banks: []
