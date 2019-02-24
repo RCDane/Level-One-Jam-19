@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -498,7 +498,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1821423681}
+      - m_Target: {fileID: 0}
         m_MethodName: IncreaseScore
         m_Mode: 3
         m_Arguments:
@@ -752,7 +752,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1821423681}
+      - m_Target: {fileID: 0}
         m_MethodName: IncreaseScore
         m_Mode: 3
         m_Arguments:
@@ -1297,7 +1297,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1821423681}
+      - m_Target: {fileID: 0}
         m_MethodName: IncreaseScore
         m_Mode: 3
         m_Arguments:
@@ -1397,7 +1397,7 @@ PrefabInstance:
     - target: {fileID: 314084710909824448, guid: 192beec3d0973bd42836e5ed36ee7410,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 314084710909824448, guid: 192beec3d0973bd42836e5ed36ee7410,
         type: 3}
@@ -1428,6 +1428,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 314084710909824449, guid: 192beec3d0973bd42836e5ed36ee7410,
+        type: 3}
+      propertyPath: tools.Array.data[1].size
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 314084710909824449, guid: 192beec3d0973bd42836e5ed36ee7410,
+        type: 3}
+      propertyPath: tools.Array.data[1].speed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 314084710909824449, guid: 192beec3d0973bd42836e5ed36ee7410,
+        type: 3}
+      propertyPath: tools.Array.data[0].size
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 314084710909824449, guid: 192beec3d0973bd42836e5ed36ee7410,
+        type: 3}
+      propertyPath: tools.Array.data[2].size
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 192beec3d0973bd42836e5ed36ee7410, type: 3}
@@ -4133,7 +4153,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1821423681}
+      - m_Target: {fileID: 0}
         m_MethodName: IncreaseScore
         m_Mode: 3
         m_Arguments:
@@ -4708,7 +4728,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0ccac7ec732587e46915d6c2a74ef36b, type: 2}
+  - {fileID: 2100000, guid: ec7d09cb1519fd1439ab18eec9c9f76b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6783,7 +6803,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &834657053
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6801,7 +6821,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 280.16028, y: 76}
+  m_AnchoredPosition: {x: 280.16028, y: 108}
   m_SizeDelta: {x: 280, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &834657054
@@ -6877,7 +6897,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1821423681}
+      - m_Target: {fileID: 0}
         m_MethodName: IncreaseScore
         m_Mode: 3
         m_Arguments:
@@ -8981,7 +9001,7 @@ Transform:
   - {fileID: 550440044}
   - {fileID: 63308383}
   m_Father: {fileID: 1222059816}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1210464516 stripped
 Transform:
@@ -9197,7 +9217,6 @@ Transform:
   - {fileID: 2068052693}
   - {fileID: 1952238294}
   - {fileID: 827355610}
-  - {fileID: 1821423680}
   - {fileID: 1190929427}
   - {fileID: 43813028}
   m_Father: {fileID: 0}
@@ -9393,7 +9412,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1250081330
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9411,7 +9430,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 280.16028, y: 123.94}
+  m_AnchoredPosition: {x: 280.16028, y: 155.93999}
   m_SizeDelta: {x: 280, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1250081331
@@ -9487,7 +9506,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1821423681}
+      - m_Target: {fileID: 0}
         m_MethodName: IncreaseScore
         m_Mode: 3
         m_Arguments:
@@ -10264,7 +10283,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1321601750
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10786,7 +10805,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1821423681}
+      - m_Target: {fileID: 0}
         m_MethodName: IncreaseScore
         m_Mode: 3
         m_Arguments:
@@ -11406,7 +11425,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 96b7f508229642f4796d7cdc81357c50, type: 2}
+  - {fileID: 2100000, guid: 51ea537cf2f06424ab73fde9354993f2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12063,7 +12082,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1620653462
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12081,7 +12100,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 280.16028, y: 28}
+  m_AnchoredPosition: {x: 280.16028, y: 59.99999}
   m_SizeDelta: {x: 280, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1620653463
@@ -12157,7 +12176,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1821423681}
+      - m_Target: {fileID: 0}
         m_MethodName: IncreaseScore
         m_Mode: 3
         m_Arguments:
@@ -12402,7 +12421,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is an example text
+  m_Text: 'SCORE: *drum roll*'
 --- !u!222 &1625382916
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12756,7 +12775,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1821423681}
+      - m_Target: {fileID: 0}
         m_MethodName: IncreaseScore
         m_Mode: 3
         m_Arguments:
@@ -13339,7 +13358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.4}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -13635,8 +13654,8 @@ GameObject:
   - component: {fileID: 1821423679}
   - component: {fileID: 1821423678}
   - component: {fileID: 1821423677}
-  - component: {fileID: 1821423681}
   - component: {fileID: 1821423682}
+  - component: {fileID: 1821423681}
   m_Layer: 0
   m_Name: SampleGoal
   m_TagString: Untagged
@@ -13710,11 +13729,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1821423676}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.784662, y: 8.073431, z: -7.8165703}
+  m_LocalPosition: {x: -2.2, y: 14.9, z: 1.4}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
-  m_Father: {fileID: 1222059816}
-  m_RootOrder: 3
+  m_Father: {fileID: 2088999860}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1821423681
 MonoBehaviour:
@@ -13725,7 +13744,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1821423676}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffc9bf3999bca8d48b2ca64dc486e998, type: 3}
+  m_Script: {fileID: 11500000, guid: 2774b4ae524c46441b44505f1d142f5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   EndText: {fileID: 1625382915}
@@ -14296,17 +14315,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97d90387a2133ca4c90c78135983952f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TotalTime: 120
-  TimeLeft: {fileID: 2049068703}
+  TotalTime: 100
+  TimeLeft: {fileID: 1124532308}
   TextList:
-  - {fileID: 102862711}
-  - {fileID: 549719761}
-  - {fileID: 658290955}
-  - {fileID: 730261753}
-  - {fileID: 1825881945}
-  - {fileID: 1985928239}
-  Options: {fileID: 1534676361}
-  Answers: {fileID: 832167252}
+  - {fileID: 341323231}
+  - {fileID: 2024979606}
+  - {fileID: 476116613}
+  - {fileID: 257471042}
+  - {fileID: 192444992}
+  - {fileID: 1988382567}
+  Options: {fileID: 1321601749}
+  Answers: {fileID: 715738449}
   Goal: {fileID: 1821423676}
   SpeechBubble: {fileID: 1734612978}
 --- !u!1001 &1956539879
@@ -15984,6 +16003,7 @@ Transform:
   - {fileID: 1717127180}
   - {fileID: 246608251}
   - {fileID: 1877365953}
+  - {fileID: 1821423680}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15999,6 +16019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a347d10c8e9262148a094c2c49779938, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManagerObject: {fileID: 0}
 --- !u!1001 &2094978352
 PrefabInstance:
   m_ObjectHideFlags: 0

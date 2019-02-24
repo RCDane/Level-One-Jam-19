@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menus/MainMenue.unity
     guid: 80bb3a90dff27a64983f50328875f272
   - enabled: 1
-    path: Assets/Scenes/J_TestingScripts.unity
-    guid: fc510b7d6de4ce64aba607075048dfc4
+    path: Assets/Scenes/Levels/Level1_Hitman - Copy.unity
+    guid: 3e38d7adeff1f1b498aca6fc948c2f25
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level2_French.unity
+    guid: cf460d7935a2b67498ea76cd8adeabb9
   m_configObjects: {}
