@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -5528,6 +5528,7 @@ GameObject:
   - component: {fileID: 715240425}
   - component: {fileID: 715240424}
   - component: {fileID: 715240423}
+  - component: {fileID: 715240427}
   m_Layer: 5
   m_Name: Text3
   m_TagString: Untagged
@@ -5614,6 +5615,29 @@ RectTransform:
   m_AnchoredPosition: {x: -212, y: -32}
   m_SizeDelta: {x: 270, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &715240427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715240422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/SFX/Dialogue/Player/PlayerReplies
+  PlayEvent: 11
+  StopEvent: 12
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &715738449
 GameObject:
   m_ObjectHideFlags: 0
@@ -6782,6 +6806,7 @@ GameObject:
   - component: {fileID: 834657056}
   - component: {fileID: 834657055}
   - component: {fileID: 834657054}
+  - component: {fileID: 834657057}
   m_Layer: 0
   m_Name: Option 2
   m_TagString: Untagged
@@ -6932,6 +6957,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834657052}
   m_CullTransparentMesh: 0
+--- !u!114 &834657057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834657052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/SFX/Dialogue/Player/PlayerReplies
+  PlayEvent: 11
+  StopEvent: 12
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &837957173
 GameObject:
   m_ObjectHideFlags: 0
@@ -7529,6 +7577,7 @@ GameObject:
   - component: {fileID: 949969729}
   - component: {fileID: 949969728}
   - component: {fileID: 949969727}
+  - component: {fileID: 949969730}
   m_Layer: 5
   m_Name: Text2
   m_TagString: Untagged
@@ -7615,6 +7664,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 949969725}
   m_CullTransparentMesh: 0
+--- !u!114 &949969730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949969725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/SFX/Dialogue/Player/PlayerReplies
+  PlayEvent: 11
+  StopEvent: 12
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &952635523
 GameObject:
   m_ObjectHideFlags: 0
@@ -9398,6 +9470,7 @@ GameObject:
   - component: {fileID: 1250081333}
   - component: {fileID: 1250081332}
   - component: {fileID: 1250081331}
+  - component: {fileID: 1250081334}
   m_Layer: 0
   m_Name: Option 1
   m_TagString: Untagged
@@ -9548,6 +9621,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1250081329}
   m_CullTransparentMesh: 0
+--- !u!114 &1250081334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250081329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/SFX/Dialogue/Player/PlayerReplies
+  PlayEvent: 11
+  StopEvent: 12
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1001 &1251046495
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12068,6 +12164,7 @@ GameObject:
   - component: {fileID: 1620653465}
   - component: {fileID: 1620653464}
   - component: {fileID: 1620653463}
+  - component: {fileID: 1620653466}
   m_Layer: 0
   m_Name: Option 3
   m_TagString: Untagged
@@ -12218,6 +12315,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1620653461}
   m_CullTransparentMesh: 0
+--- !u!114 &1620653466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620653461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/SFX/Dialogue/Player/PlayerReplies
+  PlayEvent: 11
+  StopEvent: 12
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &1624134058
 GameObject:
   m_ObjectHideFlags: 0
@@ -12434,6 +12554,7 @@ GameObject:
   - component: {fileID: 1626852570}
   - component: {fileID: 1626852569}
   - component: {fileID: 1626852568}
+  - component: {fileID: 1626852571}
   m_Layer: 5
   m_Name: Text1
   m_TagString: Untagged
@@ -12520,6 +12641,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626852566}
   m_CullTransparentMesh: 0
+--- !u!114 &1626852571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626852566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/SFX/Dialogue/Player/PlayerReplies
+  PlayEvent: 11
+  StopEvent: 12
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &1634376355
 GameObject:
   m_ObjectHideFlags: 0

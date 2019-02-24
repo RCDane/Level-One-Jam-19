@@ -97,8 +97,9 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(ambienceLoop);
+        //FMODUnity.RuntimeManager.PlayOneShot(ambienceLoop);
         MusicStart();
+        NewCustomerEnter();
     }
 
     private void Update()
@@ -278,5 +279,10 @@ public class AudioManager : MonoBehaviour
     public void UpdateHaircutProgress(float haircurProgressPercentage)
     {
         musicInstance.setParameterValue(haircutProgressParameter, haircurProgressPercentage);
+    }
+
+    private void OnDestroy()
+    {
+        musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 }

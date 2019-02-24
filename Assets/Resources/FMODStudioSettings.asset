@@ -39,7 +39,7 @@ MonoBehaviour:
     Value: 0
   OverlaySettings:
   - Platform: 1
-    Value: 1
+    Value: 0
   - Platform: 2
     Value: 0
   LoggingSettings:
@@ -61,5 +61,10 @@ MonoBehaviour:
   - Platform: 2
     Value: 32
   Plugins: []
-  MasterBanks: []
-  Banks: []
+  MasterBanks:
+  - Master Bank
+  - C:\Users\Villa\OneDrive\Documentos\Level-One-Jam-19\Assets\Audio\FMOD built banks\Desktop\Master
+    Bank
+  - C:\Repos\Level One Jam 19\Assets\Audio\FMOD built banks\Desktop\Master Bank
+  Banks:
+  - Master Bank
